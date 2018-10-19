@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tweet Labeller</title>
+        <link rel="stylesheet" type="text/css" href="labeller.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="labeller.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12 col-m-12">
+                <h1>Tweet Labeller</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-m-12">
+                <div class="tweet" id="tweet">
+                    <div class="input">
+                        <input type="file" id="file-input" accept=".csv"/>
+                    </div>
+                    Choose the tweet file to label
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-m-12">
+                <div class="download" id="download">
+                    Labelling has finished
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-m-12">
+                <button class="button download-button" id="downloadb" onclick="download()">Download</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-m-12">
+                <div class="question">
+                    Does this tweet contain a spoiler?
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-m-12">
+                <div class="hint">
+                    (Hint: You can use the 'y' key for yes and 'n' key for no)
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-m-6">
+                <button class="button left-button" id="yes" onclick="yes()">Yes</button>
+            </div>
+
+            <div class="col-6 col-m-6">
+                <button class="button right-button" id="no" onclick="no()">No</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-m-12">
+                <button class="button back-button disabled" id="back" onclick="back()">Back</button>
+            </div>
+        </div>
+    </body>
+</html>
