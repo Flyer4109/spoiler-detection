@@ -1,7 +1,7 @@
 # Spoiler detection in _Game of Thrones_ tweets
 
 This project used a Long Short-Term Memory network to detect 'spoilers' in Twitter tweets from
-the TV show _Game of Thrones_. A ‘spoiler for this project is defined as follows: 'a Twitter
+the TV show _Game of Thrones_. A 'spoiler' for this project is defined as follows: 'a Twitter
 tweet which reveals unknown information about the storyline of _Game of Thrones_ after Season 7
 Episode 3'. Using 10 fold cross-validation gave a f1-score of 0.7597 and
 recall of 0.710.To use the trained LSTM run `use_rnn.py` found in the 'rnn' directory.
